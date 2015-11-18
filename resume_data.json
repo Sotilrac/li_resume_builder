@@ -1,0 +1,15 @@
+{
+	"first_name": "Carlos",
+	"last_name": "Asmat",
+	"summary": "I am a determined Electrical Engineer specialized in Control & Automation, and Power. I have advanced hardware and software skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work.\nI continually strive to improve and learn new skills in order to be be able to contribute to the future of robotics.\nI particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots.",
+	"expereince": [{"title": "Robot Software Engineer",
+	               "start_date": "December 2013",
+	               "end_date":"Present",
+	               "location": "Boston, MA",
+	               "company": "Aldebaran Rbotics",
+	               "description": ["Develop interactive behaviours for social humanoid robots Pepper and NAO. The behaviours focus on creating physical or verbal interactions that feel natural and enjoyable to the user while minimising the cognitive load they need to invest."]
+	           }
+
+	              ]
+
+}
