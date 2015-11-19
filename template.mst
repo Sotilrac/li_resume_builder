@@ -1,0 +1,79 @@
+<html>
+    <script id="template" type="text/html">
+        <div class="row">
+            <h1 class="name">{{first_name}} {{last_name}}</h1>
+            <div class="contact">
+                <ul>
+                    <li><i class="fa fa-phone-square"></i>{{phone}}</li>
+                    {{#links}}
+                        <li><i class="fa fa-globe"></i>{{website}}</li>
+                        <li><i class="fa fa-youtube-play"></i>{{youtube}}</li>
+                        <li><i class="fa fa-github-square"></i>{{github}}</li>
+                    {{/links}}
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section_header">Summary</h2>
+            <img src="{{picture}}" alt="{{first_name}} {{last_name}}" class="profile_picture"></img>
+            <p class="summary">
+            {{#summary}}
+                {{line}}<br/>
+            {{/summary}}
+            </p>
+        </div>
+        <div class="section">
+            <h2 class="section_header">Experience</h2>
+            {{#experience}}
+                <div class="job">
+                    <span class="title">{{title}}</span>
+                    <span class="company">{{company}}</span>
+                    <span class="dates">{{start_date}} - {{end_date}}</span>
+                    <span class="location">{{location}}</span>
+                        <ul>
+                        {{#description}}
+                            <li>{{item}}</li>
+                        {{/description}}
+                        </ul>
+                </div>
+            {{/experience}}
+        </div>
+        <div class="section">
+            <h2 class="section_header">Skills</h2>
+                <h3 class="sub_section_header">Fluent in:</h3>
+                <ul class="languages">
+                {{#languages}}
+                    <li>{{item}}</li>
+                {{/languages}}
+                </ul>
+
+                <h3 class="sub_section_header">Engineering Tools:</h3>
+                <ul class="tools">
+                {{#tools}}
+                    <li>{{item}}</li>
+                {{/tools}}
+                </ul>
+
+                <h3 class="sub_section_header">programming:</h3>
+                <ul class="programming">
+                {{#programming}}
+                    <li>{{item}}</li>
+                {{/programming}}
+                </ul>
+        </div>
+        <div class="section">
+            <h2 class="section_header">Education:</h2>
+            {{#education}}
+                <div class="row">
+                    <span class="dates">{{start_date}} - {{end_date}}</span>
+                    <span class="institution">{{institution}}</span>
+                    <ul class="degrees">
+                    {{#degree}}
+                        <li>{{item}}</li>
+                    {{/degree}}
+                    </ul>
+                </div>
+            {{/education}}
+        </div>
+    </script>
+</html>

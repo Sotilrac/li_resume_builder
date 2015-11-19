@@ -1,15 +1,103 @@
-{
+resume_data = {
 	"first_name": "Carlos",
 	"last_name": "Asmat",
-	"summary": "I am a determined Electrical Engineer specialized in Control & Automation, and Power. I have advanced hardware and software skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work.\nI continually strive to improve and learn new skills in order to be be able to contribute to the future of robotics.\nI particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots.",
-	"expereince": [{"title": "Robot Software Engineer",
+	"links": {"website": "carlitoscontraptions.com",
+	         "youtube": "youtube.com/c/CarlosAsmat",
+	         "github": "github.com/Sotilrac"},
+	"phone": "(123) 456-6789",
+	"picture": "http:\/\/www.gravatar.com\/avatar\/eff8d77644ef7532075a9060a62f8f60",
+	"summary": [{"line": "I am a determined Electrical Engineer specialized in Control & Automation, and Power. I have advanced hardware and software skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work."},
+	            {"line": "I continually strive to improve and learn new skills in order to be be able to contribute to the future of robotics."},
+	            {"line": "I particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots."}],
+	"experience": [{"title": "Robot Software Engineer",
 	               "start_date": "December 2013",
 	               "end_date":"Present",
 	               "location": "Boston, MA",
 	               "company": "Aldebaran Rbotics",
-	               "description": ["Develop interactive behaviours for social humanoid robots Pepper and NAO. The behaviours focus on creating physical or verbal interactions that feel natural and enjoyable to the user while minimising the cognitive load they need to invest."]
-	           }
+	               "description": [{"item": "Develop interactive behaviours for social humanoid robots Pepper and NAO. The behaviours focus on creating physical or verbal interactions that feel natural and enjoyable to the user while minimising the cognitive load they need to invest."}]},
+	               {"title": "Co-Founder and Co-Organizer",
+	                "start_date": "February 2012",
+	           		"end_date": "November 2013",
+	           		"location": "Montreal, QC",
+	           	    "company": "Cloud Robotics Hackathon",
+	           		"description": [{"item": "Co-founded a yearly international cloud-robotics competition aiming to promote the creation of robotic applications."},
+	           			            {"item": "Coordinated all the aspects of the event, including logistics, technical expertise, and web presence."},
+	           			            {"item": "For two years in a row, gathered more than 200 people in seven cities around the world who were thrilled to hack robots during an entire weekend."}]},
 
-	              ]
+	               {"title": "External Developer - Nao Developers Program",
+	                "start_date": "March 2011",
+	           		"end_date": "November 2013",
+	           		"location": "Montreal, QC",
+	           	    "company": "Aldebaran Robotics",
+	           		"description": [{"item": "Developed applications and autonomous behaviours for the NAO humanoid robot. This program is only available to select partners with the goal of making NAO a fully autonomous personal robot."}]},
 
-}
+	               {"title": "Project Engineer & Robotics Specialist",
+	                "start_date": "January 2010",
+	           		"end_date": "November 2013",
+	           		"location": "Mirabel, QC",
+	           	    "company": "RobotShop",
+	           		"description": [{"item": "Designed robotics projects."},
+	           		                {"item": "Provided technical consultation regarding the usage of electronic, electrical, and mechanical components."},
+	           		                {"item": "Designed and implemented the first social network for robots (a remote monitoring and control system for robotic equipment)."},
+	           		                {"item": "Searched and selected new robotic products and suppliers for distribution."},
+	           		                {"item": "Blogged about the general field of robotics and produced video tutorials."}]} 	
+
+	              ],
+	"languages":[{"item": "English"},
+                 {"item": "French"},
+                 {"item": "Spanish"}],
+	"tools": [{"item": "ROS"},
+	          {"item": "OpenSCAD · Solidworks"},
+	          {"item": "Altera Quartus · Xilinx ISE · Lattice ispLever"},
+	          {"item": "Altium Designer · PSpice · EMTP-Works"},
+	          {"item": "Arduino"},
+	          {"item": "Maple · Matlab · Octave"},
+	          {"item": "Linux · Windows"},
+	          {"item": "Gimp · Inkscape"}],
+	"programming": [{"item": "C · Python"},
+					{"item": "Assembler · VHDL"},
+					{"item": "HTML · CSS · JavaScript"}],
+
+	"education": [{"institution":"University of Pennsylvania",
+	               "start_date": "2013",
+	               "end_date": "2013",
+	               "degree": [{"item":"Gamification - Online"}]},
+
+	               {"institution":"Stanford University",
+	               "start_date": "2011",
+	               "end_date": "2011",
+	               "degree": [{"item":"Machine Learning Class - Online"},
+	                          {"item": "Introduction to Artificial Intelligence - Online"}]},
+
+	               {"institution":"McGill University",
+	               "start_date": "2004",
+	               "end_date": "2008",
+	               "degree": [{"item":"Bachelor's degree in Electrical  Engineering - Control & Automation / Power"}]}],
+	"projects": [{"name": "Nao Mind Control",
+	              "start_date": "September 2012",
+	              "description": [{"item": "I put together a Nao behavior that communicates with the Neurosky MindWave Sensor and allows the user to control the humanoid robot with their thoughts. Presented at New York Maker Faire 2012"}]},
+
+	              {"name": "Nao Rock Paper Scissors Lizard Spock",
+	              "start_date": "August 2011",
+	              "description": [{"item": "Nao played the geek version of Rock Paper Scissors against children and adults at Maker Faire NY 2011. The robot was able to play with the public with minimal intervention."}]},
+
+	              {"name": "International Cooperation Trip to Ecuador",
+	              "start_date": "January 2010",
+	              "description": [{"item": "Lead a group of CEGEP IB students in a trip to Ecuador."},
+                                   {"item": "Built and deployed a wind power generator in a Ecuadorian indigenous community."},
+                                   {"item": "Built and deployed a solar water heater for an indigenous Ecuadorian school."}]},
+
+	              {"name": "McGill Autonomous Robotics Team",
+	              "start_date": "April 2008",
+	              "description": [{"item": "Acted as an external technical consultant for the team."},
+	                              {"item": "Developed a low level control system for MARTy, the McGill AUV"}]},
+
+	              {"name": "McGill University Lunar Excavator Team",
+	              "start_date": "July 2008",
+	              "description": [{"item": "Integrate the excavator controllers and sensors in a single circuit board."}]},
+
+	              {"name": "Virtual EIM",
+	              "start_date": "July 2001",
+	              "description": [{"item": "Created an interactive 3D model of my high-scool using the Half-Life 3D engine."}]}]
+
+};
