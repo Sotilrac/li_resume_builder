@@ -214,6 +214,10 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
+    .resume_container {
+        padding: 0 2% 3em;
+    }
+
     .date_col {
         display: block;
         width: auto;

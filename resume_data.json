@@ -14,14 +14,14 @@ resume_data = {
 	           "url":"https:\/\/www.linkedin.com\/in\/casmat",
 	           "icon": "linkedin-square"}],
 	"picture": "http:\/\/www.gravatar.com\/avatar\/eff8d77644ef7532075a9060a62f8f60",
-	"summary": [{"line": "I am a determined Electrical Engineer specialized in Control & Automation, and Power. I have circuit design and software development skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work."},
+	"summary": [{"line": "As a determined Electrical Engineer specialized in Control & Automation, and Power, I possess circuit design and software development skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work."},
 	            {"line": "I particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots."}],
 	"experience": [{"title": "Robot Software Engineer",
 	               "start_date": "12 \/ 2013",
 	               "end_date":"Present",
 	               "location": "Boston, MA",
 	               "company": "Aldebaran - Softbank Group",
-	               "description": [{"item": "Develop interactive behaviours for social humanoid robots Pepper and NAO. The behaviours focus on creating physical or verbal interactions that feel natural and enjoyable to the user while minimising the cognitive load they need to invest."}]},
+	               "description": [{"item": "Develop interactive behaviours for social humanoid robots Pepper and NAO. The behaviours focus on creating physical or verbal interactions that feel natural and enjoyable."}]},
 	               {"title": "Co-Founder and Co-Organizer",
 	                "start_date": "02 \/ 2012",
 	           		"end_date": "11 \/ 2013",
@@ -54,8 +54,8 @@ resume_data = {
 	           	    "end_date": "12 \/ 2009",
 	           	    "location": "Montreal, QC",
 	           	    "company": "CanSat International Inc",
-	           	    "description": [{"item": "Designed and implemented a digital signal processing systems and modems using FPGA technology."},
-	           	                     {"item": "Ensured that the implemented systems performs within specifications."}]},
+	           	    "description": [{"item": "Designed and implemented digital signal processing systems and modems using FPGA technology."},
+	           	                     {"item": "Ensured that the implemented system performs within specifications."}]},
 
 	           	   {"title": "Project Engineer",
 	           	    "start_date": "04 \/ 2009",
@@ -63,17 +63,17 @@ resume_data = {
 	           	    "location": "Montreal, QC",
 	           	    "company": "Panaxion",
 	           	    "description": [{"item": "Participated in the electrical and mechanical design of a paint application system."},
-	           	                     {"item": "Assisted in the mechanical design of a paint blending device. • Assisted in the colour blending software design."}]},
+	           	                     {"item": "Assisted in the mechanical and software design of a paint blending device."}]},
 
 	           	   {"title": "Surveying Field Professional",
 	           	    "start_date": "09 \/ 2008",
 	           	    "end_date": "11 \/ 2008",
 	           	    "location": "Boisbriand, QC",
 	           	    "company": "Group PHB",
-	           	    "description": [{"item": "Verified and adjusted aerial pictures for correctness and suitability for the client's needs."},
+	           	    "description": [{"item": "Verified and adjusted aerial pictures for correctness and suitability."},
 	           	                     {"item": "Planned and conducted aerial photographic and LiDAR topographical surveys."},
 	           	                     {"item": "Operated the Vexcel camera, the Optec LiDAR, and high precision GPS units at various Quebec locations and at Lagos, Nigeria."},
-	           	                     {"item": "Acted as the team leader in a one-month Nigerian mission."}]},
+	           	                     {"item": "Lead a one-month Nigerian survey mission."}]},
 
 
                    {"title": "Digital System Design Teaching Assistant",
@@ -81,7 +81,7 @@ resume_data = {
 	           	    "end_date": "12 \/ 2007",
 	           	    "location": "Montreal, QC",
 	           	    "company": "McGill University",
-	           	    "description": [{"item": "Lead 2-hour tutorial sessions for a group of 40 students."},
+	           	    "description": [{"item": "Lead two-hour tutorial sessions for a group of 40 students."},
 	           	                    {"item": "Answered questions, provided examples and advise regarding theoretical and practical digital system design problems."}]},
 
                    {"title": "Geomatics Technical Agent",
@@ -89,8 +89,10 @@ resume_data = {
 	           	    "end_date": "08 \/ 2007",
 	           	    "location": "Montreal, QC",
 	           	    "company": "Ville de Montréal",
-	           	    "description": [{"item": "Researched and implemented various ways of displaying 3D architectural data. • Helped document the architectural 3D modelling process."},
-	           	                    {"item": "Reorganized and documented the Old-Montreal 3D model set. • Helped in the development of a standard classification system for 3D models according to their level of detail."}]}
+	           	    "description": [{"item": "Researched and implemented various ways of displaying 3D architectural data."},
+	           	                    {"item": "Documented the architectural 3D modelling process."},
+	           	                    {"item": "Reorganized and documented the Old-Montreal 3D model set."},
+	           	                    {"item": "Assisted in the developed a standard classification system for 3D models according to their level of detail."}]}
 				],
 	"languages":[{"item": "English"},
                  {"item": "French"},
@@ -144,10 +146,10 @@ resume_data = {
 
 	              {"name": "McGill University Lunar Excavator Team",
 	              "start_date": "07 \/ 2008",
-	              "description": [{"item": "Integrate the excavator controllers and sensors in a single circuit board."}]},
+	              "description": [{"item": "Integrated the excavator controllers and sensors in a single circuit board."}]},
 
 	              {"name": "Virtual EIM",
 	              "start_date": "07 \/ 2001",
-	              "description": [{"item": "Created an interactive 3D model of my high-scool using the Half-Life 3D engine."}]}]
+	              "description": [{"item": "Created an interactive 3D model of my high-school using the Half-Life 3D engine."}]}]
 
 };
