@@ -99,6 +99,9 @@ body {
     background-color: #333;
     font-family: Open Sans, sans;
     font-size: 11pt;
+}
+
+p, li {
     text-align: justify;
 }
 
@@ -159,6 +162,10 @@ ul {
     margin: 0;
 }
 
+.dates {
+    white-space: nowrap;
+}
+
 .section_header {
     page-break-inside: avoid;
     color: #F90;
@@ -175,14 +182,15 @@ ul {
     display: inline-block;
 }
 
-.location {
-    color: #555;
-}
-
 .job_col, .educ_col, .proj_col {
     display: inline-block;
     width: 85%;
 }
+
+.location {
+    color: #555;
+}
+
 
 .company, .institution, .project_name {
     color: #003366;
@@ -203,6 +211,25 @@ ul {
 .sub_section_header {
     color: #555;
     margin: 0 0 0.2em;
+}
+
+@media screen and (max-width: 600px) {
+    .date_col {
+        display: block;
+        width: auto;
+    }
+
+    .job_col {
+        width: auto;
+    }
+
+    .contact {
+        float: none;
+    }
+
+    .skill_col {
+        display: block;
+    }
 }
 
 @media print{

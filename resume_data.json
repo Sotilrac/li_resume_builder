@@ -13,7 +13,6 @@ resume_data = {
 	           {"title": "linkedin.com\/in\/casmat",
 	           "url":"https:\/\/www.linkedin.com\/in\/casmat",
 	           "icon": "linkedin-square"}],
-	"phone": "(123) 456 - 7890",
 	"picture": "http:\/\/www.gravatar.com\/avatar\/eff8d77644ef7532075a9060a62f8f60",
 	"summary": [{"line": "I am a determined Electrical Engineer specialized in Control & Automation, and Power. I have circuit design and software development skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work."},
 	            {"line": "I particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots."}],

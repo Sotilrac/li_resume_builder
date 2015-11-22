@@ -4,7 +4,12 @@
             <h1 class="name">{{first_name}} {{last_name}}</h1>
             <div class="contact">
                 <ul>
+                    {{#phone}}
                     <li><i class="fa fa-phone-square"></i><span>{{phone}}</span></li>
+                    {{/phone}}
+                    {{#email}}
+                    <li><i class="fa fa-envelope"></i><span>{{email}}</span></li>
+                    {{/email}}
                     {{#links}}
                         <li><i class="fa fa-{{icon}}"></i><span><a href="{{url}}">{{title}}</a></span></li>
                     {{/links}}
@@ -73,7 +78,6 @@
                 <div class="job">
                     <div class="date_col">
                         <span class="dates">{{start_date}} -</span>
-                        <br/>
                         <span class="dates">{{end_date}}</span>
                     </div>
                     <div class="job_col">

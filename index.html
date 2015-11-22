@@ -26,7 +26,12 @@
 
         <script type="text/javascript">
             $.get('template.mst', function(template) {
+                try {
                 var rendered = Mustache.render(template.getElementById('template').innerHTML, resume_data);
+                }
+                catch(err){
+                    var rendered = Mustache.render($(template).filter('#template').html(), resume_data);
+                }
                 $('#target').html(rendered);
             });
             $('title').html(resume_data.first_name + " " + resume_data.last_name + " Resume")

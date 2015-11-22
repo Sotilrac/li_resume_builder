@@ -1,1 +1,1 @@
-Uses LinkedIn Profile to build an HTML printable resume.
+Renders my resume using the Mustache Javascript template engine and resume data from a JSON file.
