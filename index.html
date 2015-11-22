@@ -15,6 +15,44 @@
         <script type="text/javascript" src="js/mustache.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://bitwiseshiftleft.github.io/sjcl/sjcl.js"></script>
+
+        <script type="text/javascript">
+            // Get URL parameters by name
+            // Usage: http://page.url?parameter_name=something&another_parameter=anotherthing
+            function get_url_parameter(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+                return results == null ? '' : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+            // Get key to decrypt phone number and email
+            var key = get_url_parameter('key');
+            // Get msg to be encrypted for convenience
+            var msg = get_url_parameter('msg');
+            if (msg != "") {
+                console.log('Encrypting "' + msg + '" :');
+                console.log(sjcl.encrypt(key, msg));
+            }
+            try {
+                if (key != "") {
+                    try {
+                        resume_data['phone'] = sjcl.decrypt(key, resume_data['phone']);
+                        resume_data['email'] = sjcl.decrypt(key, resume_data['email']);
+                    } catch (err) {
+                        throw 'Ah ah ah. You didn\'t say the magic word'
+                    }
+                } else {
+                    throw "";
+                }
+            } catch (err) {
+                delete resume_data['phone'];
+                delete resume_data['email'];
+                if (err != "") {
+                    alert(err);
+                }
+            }
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -28,8 +66,7 @@
             $.get('template.mst', function(template) {
                 try {
                 var rendered = Mustache.render(template.getElementById('template').innerHTML, resume_data);
-                }
-                catch(err){
+                } catch(err) {
                     var rendered = Mustache.render($(template).filter('#template').html(), resume_data);
                 }
                 $('#target').html(rendered);

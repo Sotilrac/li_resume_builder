@@ -13,6 +13,8 @@ resume_data = {
 	           {"title": "linkedin.com\/in\/casmat",
 	           "url":"https:\/\/www.linkedin.com\/in\/casmat",
 	           "icon": "linkedin-square"}],
+	"phone": "{\"iv\":\"FUMKr3Zf9hyXW/PzvtIUnQ==\",\"v\":1,\"iter\":1000,\"ks\":128,\"ts\":64,\"mode\":\"ccm\",\"adata\":\"\",\"cipher\":\"aes\",\"salt\":\"YIq9g0zCB18=\",\"ct\":\"jLk7ff0NF36xsuithLfxpuqIjaRBmDYO\"}",
+	"email": "{\"iv\":\"DHetcUJrzvVjl6Q+ZivTnQ==\",\"v\":1,\"iter\":1000,\"ks\":128,\"ts\":64,\"mode\":\"ccm\",\"adata\":\"\",\"cipher\":\"aes\",\"salt\":\"P5UYmgeVuFM=\",\"ct\":\"+uHimOolCZ3aTvOpOtV7boL56JdI5Ht3DDivioEp\"}",
 	"picture": "http:\/\/www.gravatar.com\/avatar\/eff8d77644ef7532075a9060a62f8f60",
 	"summary": [{"line": "As a determined Electrical Engineer specialized in Control & Automation, and Power, I possess circuit design and software development skills, a substantive work experience, teamwork and communication skills, and a true passion for robotics and creative work."},
 	            {"line": "I particularly enjoy open-source hardware design, FPGAs, electronic layout and prototyping, and developing interactive applications for personal robots."}],
