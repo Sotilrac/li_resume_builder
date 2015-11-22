@@ -4,88 +4,110 @@
             <h1 class="name">{{first_name}} {{last_name}}</h1>
             <div class="contact">
                 <ul>
-                    <li><i class="fa fa-phone-square"></i>{{phone}}</li>
+                    <li><i class="fa fa-phone-square"></i><span>{{phone}}</span></li>
                     {{#links}}
-                        <li><i class="fa fa-globe"></i>{{website}}</li>
-                        <li><i class="fa fa-youtube-play"></i>{{youtube}}</li>
-                        <li><i class="fa fa-github-square"></i>{{github}}</li>
+                        <li><i class="fa fa-{{icon}}"></i><span><a href="{{url}}">{{title}}</a></span></li>
                     {{/links}}
                 </ul>
             </div>
         </div>
         <div class="section">
             <h2 class="section_header">Summary</h2>
-            <img src="{{picture}}" alt="{{first_name}} {{last_name}}" class="profile_picture"></img>
-            <p class="summary">
-            {{#summary}}
-                {{line}}<br/>
-            {{/summary}}
-            </p>
+            <div class="row">
+                <img src="{{picture}}?s=100" alt="{{first_name}} {{last_name}}" class="profile_picture"></img>
+                {{#summary}}
+                    <p class="summary">{{line}}</p>
+                {{/summary}}   
+            </div>
         </div>
         <div class="section">
-            <h2 class="section_header">Experience</h2>
-            {{#experience}}
-                <div class="job">
-                    <span class="title">{{title}}</span>
-                    <span class="company">{{company}}</span>
-                    <span class="dates">{{start_date}} - {{end_date}}</span>
-                    <span class="location">{{location}}</span>
-                        <ul>
-                        {{#description}}
+            <h2 class="section_header">Education:</h2>
+            {{#education}}
+                <div class="row">
+                    <div class="date_col">
+                        <span class="dates">{{start_date}} - {{end_date}}</span>
+                    </div>
+                    <div class="educ_col">
+                        <div class="row">
+                            <span class="institution">{{institution}}</span>
+                        </div>
+                        <ul class="degrees">
+                        {{#degree}}
                             <li>{{item}}</li>
-                        {{/description}}
+                        {{/degree}}
                         </ul>
+                    </div>
                 </div>
-            {{/experience}}
+            {{/education}}
         </div>
         <div class="section">
             <h2 class="section_header">Skills</h2>
-                <h3 class="sub_section_header">Fluent in:</h3>
-                <ul class="languages">
-                {{#languages}}
+            <div class="skill_col">
+                <h3 class="sub_section_header">Programming:</h3>
+                <ul class="programming">
+                {{#programming}}
                     <li>{{item}}</li>
-                {{/languages}}
+                {{/programming}}
                 </ul>
-
+            </div>
+            <div class="skill_col">
                 <h3 class="sub_section_header">Engineering Tools:</h3>
                 <ul class="tools">
                 {{#tools}}
                     <li>{{item}}</li>
                 {{/tools}}
                 </ul>
-
-                <h3 class="sub_section_header">programming:</h3>
-                <ul class="programming">
-                {{#programming}}
+            </div>
+            <div class="skill_col">
+                <h3 class="sub_section_header">Fluent in:</h3>
+                <ul class="languages">
+                {{#languages}}
                     <li>{{item}}</li>
-                {{/programming}}
+                {{/languages}}
                 </ul>
+            </div>
         </div>
         <div class="section">
-            <h2 class="section_header">Education:</h2>
-            {{#education}}
-                <div class="row">
-                    <span class="dates">{{start_date}} - {{end_date}}</span>
-                    <span class="institution">{{institution}}</span>
-                    <ul class="degrees">
-                    {{#degree}}
-                        <li>{{item}}</li>
-                    {{/degree}}
-                    </ul>
+            <h2 class="section_header">Experience</h2>
+            {{#experience}}
+                <div class="job">
+                    <div class="date_col">
+                        <span class="dates">{{start_date}} -</span>
+                        <br/>
+                        <span class="dates">{{end_date}}</span>
+                    </div>
+                    <div class="job_col">
+                        <div class="row">
+                            <span class="company">{{company}}:</span>
+                            <span class="title">{{title}}</span>
+                            <span class="location">({{location}})</span>
+                        </div>
+                        <ul>
+                        {{#description}}
+                            <li>{{item}}</li>
+                        {{/description}}
+                        </ul>
+                    </div>
                 </div>
-            {{/education}}
+            {{/experience}}
         </div>
         <div class="section">
             <h2 class="section_header">Projects:</h2>
             {{#projects}}
                 <div class="row">
-                    <span class="dates">{{start_date}}</span>
-                    <span class="project_name">{{name}}</span>
-                    <ul class="project_description">
-                    {{#description}}
-                        <li>{{item}}</li>
-                    {{/description}}
-                    </ul>
+                    <div class="date_col">
+                        <span class="dates">{{start_date}}</span>
+                    </div>
+                    <div class="proj_col">
+                        <div class="row">
+                            <span class="project_name">{{name}}</span>
+                        </div>
+                        <ul class="project_description">
+                        {{#description}}
+                            <li>{{item}}</li>
+                        {{/description}}
+                        </ul>
+                    </div>
                 </div>
             {{/projects}}
         </div>

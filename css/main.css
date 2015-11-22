@@ -95,21 +95,125 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #333;
+    font-family: Open Sans, sans;
+    font-size: 11pt;
+    text-align: justify;
+}
 
+a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
 
+ul {
+    margin: 0.1em 0 0.7em 0;
+    padding: 0 0 0 1.7em;
+    list-style-type: circle;
+}
 
+.section {
+    clear: both;
+}
 
+.resume_container {
+    background-color: #EFEFEF;
+    max-width: 8.5in;
+    width: 96%;
+    padding: 3em 2%;
+}
 
+.profile_picture {
+    float: left;
+    padding: 0 1em 0.5em 0;
+}
 
+.summary {
+    font-size: 0.95em;
+    text-align: justify;
+    margin: 0 0 0.7em;
+}
 
+.contact {
+    float: right;
+    font-size:  0.9em;
+}
 
+.contact ul {
+    list-style: outside none none;
+    margin: 0;
+}
 
+.contact ul li i {
+    color: #003366; 
+}
+.contact ul li span {
+    padding-left: 1em;
+}
 
+.name {
+    font-size: 3em;
+    display: inline-block;
+    margin: 0;
+}
 
+.section_header {
+    page-break-inside: avoid;
+    color: #F90;
+    border-bottom: 0.1em solid rgb(204, 204, 204);
+    margin: 0.4em 0 0.3em;
+}
 
+.date_col {
+    vertical-align: top;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #555;
+    width: 7em;
+    display: inline-block;
+}
 
+.location {
+    color: #555;
+}
 
+.job_col, .educ_col, .proj_col {
+    display: inline-block;
+    width: 85%;
+}
 
+.company, .institution, .project_name {
+    color: #003366;
+    padding: 0 3px 0 0;
+    font-weight: bold;
+}
+
+.skill_col {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2%;
+}
+
+.skill_col ul {
+    margin: 0;
+}
+
+.sub_section_header {
+    color: #555;
+    margin: 0 0 0.2em;
+}
+
+@media print{
+    .resume_container {
+        margin: 0;
+        background-color: #FFF;
+        width: 100%;
+        padding: 0;
+        max-width: none;
+    }
+}
 
 /* ==========================================================================
    Helper classes
@@ -215,23 +319,13 @@ textarea {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
 
     a,
     a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+        text-decoration: none;
     }
 
     /*
