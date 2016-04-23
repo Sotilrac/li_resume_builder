@@ -167,7 +167,7 @@ ul {
 }
 
 .section_header {
-    page-break-inside: avoid;
+    page-break-after: avoid;
     color: #F90;
     border-bottom: 0.1em solid rgb(204, 204, 204);
     margin: 0.4em 0 0.3em;
